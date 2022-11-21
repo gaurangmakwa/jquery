@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script src="jquery-3.6.1.js"></script>
+        <script>
+            $(document).ready(function () {
+             //toggle paragraph display with fading
+             $(".btn-toggle").click(function(){
+                $("p").fadeToggle();
+             });
+            });
+        </script>
+    </head>
+    <body>
+        <button type="button" class="btn-toggle">fade toggle</button>
+        <p>this is a paragraph.</p>
+    </body>
+</html>

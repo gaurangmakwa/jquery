@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script src="jquery-3.6.1.js"></script>
+        <script>
+            i=0;
+            $(document).ready(function () {
+               $("input").keypress(function (){
+                $("span").text(i +=1);
+               });
+            });
+        </script>
+    </head>
+    <body>
+       enter your name:<input type="text">
+       <p>keypresses:<span>0</span></p>
+    </body>
+</html>

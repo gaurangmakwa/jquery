@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script src="jquery-3.6.1.js"></script>
+        <script>
+            $(document).ready(function () {
+             //toggle paragraphs display with sliding
+             $(".btn-toggle").click(function(){
+                $("p").slideToggle();
+             });
+            });
+        </script>
+    </head>
+    <body>
+        <button type="button" class="btn-toggle">slide toggle</button>
+       
+        <p>this is a paragraph.</p>
+        <p>this is anothter paragraph.</p>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script src="jquery-3.6.1.js"></script>
+        <style>
+            .box{
+                width:100px;
+                height:100px;
+                background:green;
+                margin-top:30px;
+                border-style:solid;
+                border-color:gray;
+
+            }
+        </style>
+        <script>
+            $(document).ready(function () {
+                $("button").click(function () {
+                    $(".box")
+                    .animate({width: "300px"})
+                    .animate({height: "300px"})
+                    .animate({marginLeft: "150px"})
+                    .animate({borderwidth: "10px"})
+                    .animate({opacity:0.5});
+             });
+            });
+        </script>
+    </head>
+    <body>
+        <button type="button">start animation</button>
+       
+       <div class="box"></div>
+    </body>
+</html>

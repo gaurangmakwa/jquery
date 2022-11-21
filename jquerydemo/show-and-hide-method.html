@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script src="jquery-3.6.1.js"></script>
+        <script>
+            $(document).ready(function () {
+             //hide displayed paragraph
+             $(".btn-hide").click(function(){
+                $("p").hide();
+             });
+             //show hidden paragraph
+             $(".btn-show").click(function (){
+                $("p").show();
+             });
+            });
+        </script>
+    </head>
+    <body>
+        <button type="button" class="btn-hide">hide</button>
+        <button type="button" class="btn-show">show</button>
+        <p>this is a paragraph.</p>
+    </body>
+</html>

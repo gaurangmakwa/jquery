@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script src="jquery-3.6.1.js"></script>
+        <script>
+            $(document).ready(function () {
+               $("button").click(function (){
+                   var value=$("#name").val();
+                   alert(value)
+                   //alert(parseInt(value) + parseInt(value));
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <form>
+            name:<input type="text" id="name">
+        </form>
+        <br>
+        <button>click me!</button>
+    </body>
+</html>
